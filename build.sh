@@ -8,7 +8,6 @@
 #
 
 DOCKER_REPO_NAME='pipeline-1-hello-world'
-BUILD_NUMBER='0'
 DOCKER_PATH='davidjohnmac'
 echo
 echo "Building $DOCKER_REPO_NAME:$BUILD_NUMBER"
