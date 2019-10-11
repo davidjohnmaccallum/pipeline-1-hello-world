@@ -18,6 +18,7 @@ echo "BUILD_NUMBER: $BUILD_NUMBER"
 echo "DOCKER_PATH: $DOCKER_PATH"
 echo
 echo "Building docker image and pushing to container registry"
+cat ~/dockerhub_password.txt | docker login --username davidjohnmac --password-stdin
 (docker build -t "$DOCKER_REPO_NAME:$BUILD_NUMBER" . && \
   docker tag "$DOCKER_REPO_NAME:$BUILD_NUMBER" "${DOCKER_PATH}/${DOCKER_REPO_NAME}:$BUILD_NUMBER" && \
   docker tag "$DOCKER_REPO_NAME:$BUILD_NUMBER" "${DOCKER_PATH}/${DOCKER_REPO_NAME}:latest" && \
