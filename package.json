@@ -1,0 +1,23 @@
+{
+  "name": "pipeline-1-hello-world",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davidjohnmaccallum/pipeline-1-hello-world.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/davidjohnmaccallum/pipeline-1-hello-world/issues"
+  },
+  "homepage": "https://github.com/davidjohnmaccallum/pipeline-1-hello-world#readme",
+  "devDependencies": {
+    "jest": "^24.9.0"
+  }
+}
